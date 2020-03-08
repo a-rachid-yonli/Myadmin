@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b593391d68.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAdmin</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <header>
+        <nav class="blue">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">MYadmin</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a class="active blue darken-3" href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="posts.html">Posts</a>
+                        </li>
+                        <li>
+                            <a href="categorie.html">Catergorie</a>
+                        </li>
+                        <li>
+                            <a href="comments.html">Comments</a>
+                        </li>
+                        <li>
+                            <a href="users.html">Users</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="mobile-demo" class="sidenav-trigger right show-on-large"><i class="material-icons">menu</i></a>
+                        </li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="sidenav" id="mobile-demo">
+            <div class="card blue">
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="img/moi.jpg" style="width: 100px;height: 100px; border-radius: 50%;" alt="photo">
+                    </div>
+                    <h6>abdoul rachid yonli</h6>
+                    <h6><em>abdoulrachidyonlijr@yahoo.fr</em></h6>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a class="active blue darken-3" href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="posts.html">Posts</a>
+                </li>
+                <li>
+                    <a href="categorie.html">Categorie</a>
+                </li>
+                <li>
+                    <a href="comments.html">Comments</a>
+                </li>
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+                <li class="divider"></li>
+                <li class="disabled grey-text">Accout Control</li>
+                <li><a href="#!">Log out</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col s12 m3 center-align ">
+                <div class="card">
+                    <div class="card-content">
+                        <div><span><i class="fas fa-smile-beam fa-2x"></i></span></div>
+                        <div>
+                            <h4>Monthly Visitors</h4>
+                        </div>
+                        <div>
+                            <h3>35900</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="determinate" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3 center-align">
+                <div class="card blue white-text">
+                    <div class="card-content">
+                        <div><span><i class="fas fa-pencil-alt  fa-2x"></i></span></div>
+                        <div>
+                            <h4>Blog Posts</h4>
+                        </div>
+                        <div>
+                            <h3>207</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="determinate" style="width: 15%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3 center-align">
+                <div class="card dark-text">
+                    <div class="card-content">
+                        <div><span><i class="far fa-comments fa-2x"></i></span></div>
+                        <div>
+                            <h4>Comments</h4>
+                        </div>
+                        <div>
+                            <h3>2300</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="determinate" style="width: 45%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3 center-align">
+                <div class="card  blue white-text">
+                    <div class="card-content">
+                        <div><span><i class="fas fa-users fa-2x"></i></span></div>
+                        <div>
+                            <h4>Users</h4>
+                        </div>
+                        <div>
+                            <h3>410</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="determinate" style="width: 7%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="row ">
+            <div class="col s12 m8 white ">
+                <div class="card">
+                    <div class="card-content">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card blue">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h5>Latest Comments</h5>
+                            <div class="divider"></div>
+                        </div>
+                        <div>
+                            <span><i class="fas fa-user-tie fa-3x"></i></span>
+                            <span>
+                                <h6>Rachida Zakou </h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                <small class="green-text">Approve</small><small class="red-text">Deny</small>
+                            </span>
+                        </div>
+                        <div>
+                            <span><i class="fas fa-user-tie fa-3x"></i></span>
+                            <span>
+                                <h6>Mamane Sani</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                <small class="green-text">Approve</small><small class="red-text">Deny</small>
+                            </span>
+                        </div>
+                        <div>
+                            <span><i class="fas fa-user-tie fa-3x"></i></span>
+                            <span>
+                                <h6>Yasmine Abani</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                <small class="green-text">Approve</small><small class="red-text">Deny</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col s12 m8">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h4>Recent Posts</h4>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Categorie</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Post one</td>
+                                        <td>Web Developement</td>
+                                        <td><button type="button" class="btn waves-effect waves-dark blue white-text">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post two</td>
+                                        <td>Graphic Design</td>
+                                        <td><button type="button" class="btn waves-effect waves-dark blue white-text">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>post three</td>
+                                        <td>Web Developement</td>
+                                        <td><button type="button" class="btn waves-effect waves-dark blue white-text">Details</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h4>Quick Todos</h4>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="" placeholder="Add Todo" id="text">
+                            <label for="text">Add Todo</label>
+                        </div>
+                        <ul class="collection">
+                            <li class="collection-item"><span>Todo one</span><span class=" material-icons right green-text">close</span></li>
+                            <li class="collection-item"><span>Todo two</span><span class=" material-icons right green-text">close</span></li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer  blue">
+        <div class="footer-copyright center-align ">
+            <div class="container">
+                MyAdmin CodeLoccol Copyright © 2020
+                <div class="fixed-action-btn">
+                    <a class="btn-floating btn-large red">
+                        <i class="large material-icons">add</i>
+                    </a>
+                    <ul>
+                        <li><a class="waves-effect waves-light btn-floating blue modal-trigger" href="#modal1"><span style="margin-top: 8px;" class="material-icons">create</span></a></li>
+                        <li><a class="waves-effect waves-light btn-floating blue modal-trigger" href="#modal2"><span style="margin-top: 8px;" class="material-icons">folder</span></a></li>
+                        <li><a class="waves-effect waves-light btn-floating blue modal-trigger" href="#modal3"><span style="margin-top: 8px;" class="material-icons">person</span></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Add Post</h4>
+            <div class="input-field">
+                <input type="text" placeholder="Title" id="Title">
+                <label for="Title">Title</label>
+                <div class="input-field">
+                    <select placeholder="Select Option" id="SelectRole">
+                        <option value="disabled selected" >choose your role</option>
+                        <option value="1">developer</option>
+                        <option value="2">entrepreneur</option>
+                        <option value="3">catcheur</option>
+                        <option value="4">politicien</option>
+                        <option value="5">gammeur</option>
+                        <option value="6">journaliste</option>
+                        <option value="7">etudiant</option>
+                    </select>
+                    <label for="SelectRole">Select Option</label>
+                </div>
+            </div>
+            <div class="input-field">
+                <textarea name="mytextaera" id="mytextarea" cols="30" rows="10">
+                    <label for="mytextarea">body</label>
+                    your text here
+                </textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn blue">SUBMIT</a>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Add Category</h4>
+            <div class="input-field"><input type="text" placeholder="Title" id="Title">
+                <label for="Title">Title</label>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn blue">SUBMIT</a>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Add User</h4>
+            <div class="input-field">
+                <input type="text" placeholder="Name" id="name">
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" placeholder="Email" id="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Password" id="password">
+                <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Confirm Password" id="password">
+                <label for="password">Confirm Password</label>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn blue">SUBMIT</a>
+            </div>
+        </div>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdn.tiny.cloud/1/z1agzineljipcddzkmmimhl07iyyqmmmnpjcb48fu02fz1ko/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <script>
+            tinymce.init({
+                selector: '#mytextarea'
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('.sidenav').sidenav();
+                $('.fixed-action-btn').floatingActionButton();
+                $('.modal').modal();
+                $('select').formSelect();
+            });
+        </script>
+        <script>
+            let myChart = document.getElementById('myChart').getContext('2d');
+            let massPopChart = new Chart(myChart, {
+                type: 'line',
+                data: {
+                    labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+                    datasets: [{
+                        label: 'Populations',
+                        data: [
+                            450,
+                            400,
+                            540,
+                            460,
+                            450,
+                            500,
+                            470,
+                            400,
+                            500,
+                            470,
+                            520
+                        ]
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: 'Daily Visitors',
+                        fontSize: 25,
+                    },
+                    legend: {
+                        display: false,
+                    }
+                }
+            });
+        </script>
+</body>
+
+</html>

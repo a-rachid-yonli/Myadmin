@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b593391d68.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAdmin/users</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <header>
+        <nav class="blue">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">MYadmin</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="index.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="posts.html">Posts</a>
+                        </li>
+                        <li>
+                            <a href="categorie.html">Catergorie</a>
+                        </li>
+                        <li>
+                            <a href="comments.html">Comments</a>
+                        </li>
+                        <li>
+                            <a class="active blue darken-3" href="#">Users</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="mobile-demo" class="sidenav-trigger right show-on-large"><i class="material-icons">menu</i></a>
+                        </li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="sidenav" id="mobile-demo">
+            <div class="card blue">
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="img/moi.jpg" style="width: 100px;height: 100px; border-radius: 50%;" alt="photo">
+                    </div>
+                    <h6>abdoul rachid yonli</h6>
+                    <h6><em>abdoulrachidyonlijr@yahoo.fr</em></h6>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="posts.html">Posts</a>
+                </li>
+                <li>
+                    <a href="categorie.html">Categorie</a>
+                </li>
+                <li>
+                    <a href="comments.html">Comments</a>
+                </li>
+                <li>
+                    <a class="active blue darken-3" href="#">Users</a>
+                </li>
+                <li class="divider"></li>
+                <li class="disabled grey-text">Accout Control</li>
+                <li><a href="#!">Log out</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <h5>Users</h5>
+                            </div>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Registered</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-user-tie fa-3x"></i></td>
+                                        <td>Rachida Zakou</td>
+                                        <td>chida@gmail.com</td>
+                                        <td>Oct 1,2019</td>
+                                        <td><a href="#!" class="btn blue white-text waves-effect waves-dark ">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-user-tie fa-3x"></i></td>
+                                        <td>Mamane sani</td>
+                                        <td>msani@gmail.com</td>
+                                        <td>Oct 3,2019</td>
+                                        <td><a href="#!" class="btn blue white-text waves-effect waves-dark ">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-user-tie fa-3x"></i></td>
+                                        <td>Yasmine abani</td>
+                                        <td>Abani@gmail.com</td>
+                                        <td>Oct 5,</td>
+                                        <td><a href="#!" class="btn blue white-text waves-effect waves-dark ">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-user-tie fa-3x"></i></td>
+                                        <td>Charif Ahmed</td>
+                                        <td>med@gmail.com</td>
+                                        <td>Oct 10;2019</td>
+                                        <td><a href="#!" class="btn blue white-text waves-effect waves-dark ">Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="card-footer">
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                    <li class="active"><a href="#!">1</a></li>
+                                    <li class="waves-effect"><a href="#!">2</a></li>
+                                    <li class="waves-effect"><a href="#!">3</a></li>
+                                    <li class="waves-effect"><a href="#!">4</a></li>
+                                    <li class="waves-effect"><a href="#!">5</a></li>
+                                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer  blue">
+        <div class="footer-copyright center-align ">
+            <div class="container">
+                MyAdmin CodeLoccol Copyright © 2020
+                <div class="fixed-action-btn">
+                    <a class="btn-floating btn-large red">
+                        <i class="large material-icons">add</i>
+                    </a>
+                    <ul>
+                        <li><a class="waves-effect waves-light btn-floating blue modal-trigger" href="#modal1"><span style="margin-top: 8px;" class="material-icons">create</span></a></li>
+                        <li><a class="waves-effect waves-light btn-floating blue modal-trigger" href="#modal2"><span style="margin-top: 8px;" class="material-icons">folder</span></a></li>
+                        <li><a class="waves-effect waves-light btn-floating blue modal-trigger" href="#modal3"><span style="margin-top: 8px;" class="material-icons">person</span></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Add Post</h4>
+            <div class="input-field">
+                <input type="text" placeholder="Title" id="Title">
+                <label for="Title">Title</label>
+                <div class="input-field">
+                    <select placeholder="Select Option" id="SelectRole">
+                    <option value="disabled selected" >choose your role</option>
+                    <option value="1">developer</option>
+                    <option value="2">entrepreneur</option>
+                    <option value="3">catcheur</option>
+                    <option value="4">politicien</option>
+                    <option value="5">gammeur</option>
+                    <option value="6">journaliste</option>
+                    <option value="7">etudiant</option>
+                </select>
+                    <label for="SelectRole">Select Option</label>
+                </div>
+            </div>
+            <div class="input-field">
+                <textarea name="mytextaera" id="mytextarea" cols="30" rows="10">
+                <label for="mytextarea">body</label>
+                your text here
+            </textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn blue">SUBMIT</a>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Add Category</h4>
+            <div class="input-field"><input type="text" placeholder="Title" id="Title">
+                <label for="Title">Title</label>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn blue">SUBMIT</a>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Add User</h4>
+            <div class="input-field">
+                <input type="text" placeholder="Name" id="name">
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" placeholder="Email" id="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Password" id="password">
+                <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Confirm Password" id="password">
+                <label for="password">Confirm Password</label>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn blue">SUBMIT</a>
+            </div>
+        </div>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdn.tiny.cloud/1/z1agzineljipcddzkmmimhl07iyyqmmmnpjcb48fu02fz1ko/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <script>
+            tinymce.init({
+                selector: '#mytextarea'
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('.sidenav').sidenav();
+                $('.fixed-action-btn').floatingActionButton();
+                $('.modal').modal();
+                $('select').formSelect();
+            });
+        </script>
+</body>
+
+</html>
